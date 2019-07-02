@@ -9,9 +9,9 @@ const NavBar = () => {
         <div>
         <AppBar position="static">
             <Toolbar>
-                <Link to="/">Home</Link>
-                <Link to="/InSeason">In Season</Link>
-                <Link to="/Schedule">Schedule</Link>
+                <Link to="/">Home &nbsp;</Link>
+                <Link to="/InSeason">In Season &nbsp;</Link>
+                <Link to="/Schedule">Schedule&nbsp;</Link>
             </Toolbar>
         </AppBar>
         </div>
