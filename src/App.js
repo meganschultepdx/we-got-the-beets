@@ -4,24 +4,18 @@ import './App.css';
 import NavBar from './components/NavBar';
 
 function App() {
+  var containerStyle = {
+      backgroundColor: 'rgba(255, 255, 255, 0.65)'
+  }
   return (
     <div className="App">
     <NavBar/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div style={containerStyle}>
         <p>
           The Lin-Lins
         </p>
         <p>We got the beets!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
