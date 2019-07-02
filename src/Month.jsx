@@ -11,7 +11,7 @@ function Month (props){
   );
 }
 
-InSeason.propTypes = {
+Month.propTypes = {
     month: PropTypes.string,
     selection: PropTypes.arrayOf(PropTypes.string)
   };
