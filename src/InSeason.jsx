@@ -8,6 +8,7 @@ function InSeason(props) {
     var inSeason = availableProduce.find( element => element.month === currentMonth)
     return (
       <div>
+          <h1>In season right now:</h1>
           <Month 
           month = {inSeason.month}
           selection = {inSeason.selection} />

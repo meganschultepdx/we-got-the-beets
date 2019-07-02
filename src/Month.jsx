@@ -6,7 +6,9 @@ function Month (props){
   return (
     <div>
       <h3>{props.month}</h3>
-      <h3>{props.selection}</h3>
+      {props.selection.map((produce) => 
+          <h5>{produce}</h5>
+      )}
     </div>
   );
 }
