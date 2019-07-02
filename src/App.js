@@ -4,6 +4,8 @@ import './App.css';
 import NavBar from './NavBar';
 import MarketSchedule from './MarketSchedule';
 import InSeason from './InSeason';
+import { Switch, Route } from 'react-router-dom';
+
 
 function App() {
   var containerStyle = {
@@ -20,8 +22,11 @@ function App() {
           The Lin-Lins
         </p>
         <p>We got the beets!</p>
-        <MarketSchedule/>
-        <InSeason/>
+        <Switch>
+          <Route exact path="/" component={MarketSchedule} />
+          <Route path="/InSeason" component={InSeason} />
+          <Route path="/Schedule" component={MarketSchedule} />
+        </Switch>
       </div>
     </div>
   );
