@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
+import MarketSchedule from './components/MarketSchedule';
 
 function App() {
   var containerStyle = {
@@ -15,6 +16,7 @@ function App() {
           The Lin-Lins
         </p>
         <p>We got the beets!</p>
+        <MarketSchedule/>
       </div>
     </div>
   );
