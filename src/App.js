@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar';
-import MarketSchedule from './components/MarketSchedule';
+import NavBar from './NavBar';
+import MarketSchedule from './MarketSchedule';
 
 function App() {
   var containerStyle = {

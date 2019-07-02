@@ -1,5 +1,5 @@
 import React from 'react';
-import {marketSchedule} from './../assests/MarketData';
+import {marketSchedule} from './assests/MarketData';
 import WeekDay from './WeekDay';
 
 function MarketSchedule() {
