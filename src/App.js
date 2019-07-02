@@ -3,10 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './NavBar';
 import MarketSchedule from './MarketSchedule';
+import InSeason from './InSeason';
 
 function App() {
   var containerStyle = {
-      backgroundColor: 'rgba(255, 255, 255, 0.65)'
+      backgroundColor: 'rgba(255, 255, 255, 0.65)',
+      maxWidth: '800px',
+      width: '80%',
+      margin: 'auto'
   }
   return (
     <div className="App">
@@ -17,6 +21,7 @@ function App() {
         </p>
         <p>We got the beets!</p>
         <MarketSchedule/>
+        <InSeason/>
       </div>
     </div>
   );
