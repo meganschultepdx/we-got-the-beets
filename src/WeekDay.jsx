@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 function WeekDay(props){
   return (
@@ -10,5 +11,12 @@ function WeekDay(props){
     </div>
   );
 }
+
+WeekDay.propTypes = {
+  day: PropTypes.string,
+  location: PropTypes.string,
+  hours: PropTypes.string,
+  booth: PropTypes.string
+};
 
 export default WeekDay;
