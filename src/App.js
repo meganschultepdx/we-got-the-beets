@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from './NavBar';
 import MarketSchedule from './MarketSchedule';
 import InSeason from './InSeason';
-import { Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import Splash from './Splash';
 
 
@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="App">
     <NavBar/>
+    <HashRouter>
       <div style={containerStyle}>
         <Switch>
           <Route exact path="/" component={Splash} />
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Schedule" component={MarketSchedule} />
         </Switch>
       </div>
+      </HashRouter>
     </div>
   );
 }
