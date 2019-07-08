@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 
-class NewComment extends React.Component {
+class NewMessage extends React.Component {
   state = {
     redirect: false
   }
@@ -13,17 +13,17 @@ class NewComment extends React.Component {
   }
   renderRedirect = () => {
     if (this.state.redirect) {
-      return <Redirect to='/NewComment' />
+      return <Redirect to='/NewMessage' />
     }
   }
   render () {
     return (
        <div>
         {this.renderRedirect()}
-        <button onClick={this.setRedirect}>New Comment</button>
+        <button onClick={this.setRedirect}>New Message</button>
        </div>
     )
   }
 }
 
-export default NewComment;
+export default NewMessage;

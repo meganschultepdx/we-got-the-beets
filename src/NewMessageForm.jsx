@@ -2,38 +2,40 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
-function NewCommentForm(props){
+function NewMessageForm(props){
 
   let _names = null;
   let _comment = null;
 
-  function handleNewCommentFormSubmission(event) {
+  function handleNewMessageFormSubmission(event) {
     event.preventDefault();
-    props.onNewCommentCreation({names: _names.value,  comment: _comment.value, id: v4()});
+    props.onNewMessageCreation({names: _names.value,  comment: _comment.value, id: v4()});
    _names.value = '';
    _comment.value = '';
   }
 
   return (
     <div>
-    <form onSubmit={handleNewCommentFormSubmission}>
+    <form onSubmit={handleNewMessageFormSubmission}>
     <input
     type='text'
     id='names'
-    placeholder='Pair Names'
+    placeholder='Your Name'
     ref={(input) => {_names = input;}}/>
+    <br/><br/><br/>
     <textarea
     id='comment'
     placeholder='Describe your comment.'
     ref={(textarea) => {_comment = textarea;}}/>
+    <br/><br/><br/>
     <button type='submit'>Help!</button>
     </form>
     </div>
   );
 }
 
-NewCommentForm.propTypes = {
-  onNewCommentCreation: PropTypes.func
+NewMessageForm.propTypes = {
+  onNewMessageCreation: PropTypes.func
 };
 
-export default NewCommentForm;
+export default NewMessageForm;
