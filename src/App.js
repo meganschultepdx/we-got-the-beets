@@ -6,6 +6,8 @@ import MarketSchedule from './MarketSchedule';
 import InSeason from './InSeason';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import Splash from './Splash';
+import NewCommentControl from './NewCommentControl';
+import NewCommentForm from './NewCommentForm';
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route exact path="/" component={Splash} />
           <Route path="/InSeason" component={InSeason} />
           <Route path="/Schedule" component={MarketSchedule} />
+          <Route path="/NewComment" component={NewCommentForm} />
+          
         </Switch>
       </div>
       </HashRouter>
