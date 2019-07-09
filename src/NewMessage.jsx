@@ -1,4 +1,4 @@
-import React from 'react';
+{/*import React from 'react';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ class NewMessage extends React.Component {
   }
   renderRedirect = () => {
     if (this.state.redirect) {
-      return <Redirect to='/NewMessage' />
+      return <Redirect to='/NewMessageForm' />
     }
   }
   render () {
@@ -26,4 +26,4 @@ class NewMessage extends React.Component {
   }
 }
 
-export default NewMessage;
+export default NewMessage;*/}

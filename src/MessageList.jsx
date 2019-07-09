@@ -3,7 +3,6 @@ import Message from './Message';
 import PropTypes from 'prop-types';
 
 function MessageList(props){
-  console.log(props);
   return (
     <div>
       <hr/>

@@ -48,8 +48,8 @@ class App extends React.Component {
       <Route exact path="/" component={Splash} />
       <Route path="/InSeason" component={InSeason} />
       <Route path="/Schedule" render={()=><MarketSchedule masterMessageList={this.state.masterMessageList}/> }/>
-      <Route path='/NewMessage' render={()=><NewMessageControl onNewMessageCreation={this.handleAddingNewMessageToList} />} />
-
+      // <Route path='/NewMessage' render={()=><NewMessageControl onNewMessageCreation={this.handleAddingNewMessageToList} />} />
+      <Route path='/NewMessageForm' render={()=><NewMessageControl onNewMessageCreation={this.handleAddingNewMessageToList} />} />
 
       </Switch>
       </div>

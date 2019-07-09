@@ -9,14 +9,19 @@ class NewMessageControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
+    this.handleFormVisibleOnPage = this.handleFormVisibleOnPage.bind(this);
   }
 
-
+  handleFormVisibleOnPage(){
+    this.setState({formVisibleOnPage: true});
+  }
 
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewMessageForm onNewMessageCreation={this.props.onNewMessageCreation}/>;
+    } else {
+      currentlyVisibleContent = <button onClick ={this.handleFormVisibleOnPage}>New Message</button>
     }
     return (
       <div>

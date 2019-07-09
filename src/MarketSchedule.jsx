@@ -3,7 +3,6 @@ import { marketSchedule } from './assests/MarketData';
 import WeekDay from './WeekDay';
 
 function MarketSchedule(props) {
-  console.log(props);
     return (
         <div>
           <h1>Where you can find us:</h1>
@@ -13,7 +12,7 @@ function MarketSchedule(props) {
               location={weekDay.location}
               hours={weekDay.hours}
               booth={weekDay.booth}
-              masterMessageList={props.masterMessageList} 
+              masterMessageList={props.masterMessageList}
               key={index}/>
           )}
         </div>
