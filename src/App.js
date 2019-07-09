@@ -37,8 +37,6 @@ class App extends React.Component {
   }
 
   render(){
-
-
     return (
       <div className="App">
       <NavBar masterMessageList={this.state.masterMessageList}/>
@@ -47,9 +45,7 @@ class App extends React.Component {
       <Switch>
       <Route exact path="/" component={Splash} />
       <Route path="/InSeason" component={InSeason} />
-      <Route path="/Schedule" render={()=><MarketSchedule masterMessageList={this.state.masterMessageList}/> }/>
-      // <Route path='/NewMessage' render={()=><NewMessageControl onNewMessageCreation={this.handleAddingNewMessageToList} />} />
-      <Route path='/NewMessageForm' render={()=><NewMessageControl onNewMessageCreation={this.handleAddingNewMessageToList} />} />
+      <Route path="/Schedule" render={()=><MarketSchedule onNewMessageCreation={this.handleAddingNewMessageToList} masterMessageList={this.state.masterMessageList}/> }/>
 
       </Switch>
       </div>

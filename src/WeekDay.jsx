@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import MessageList from './MessageList'
 import { Link } from 'react-router-dom';
 import NewMessageForm from './NewMessageForm';
+import NewMessageControl from './NewMessageControl';
 
 function WeekDay(props){
   return (
@@ -10,7 +11,7 @@ function WeekDay(props){
     <h3>{props.day}s at {props.location}</h3>
     <p><em>Hours: {props.hours}</em></p>
     <p><em>At booth {props.booth}</em></p>
-    <button><Link to="/NewMessageForm">Leave Message</Link></button>
+    <NewMessageControl onNewMessageCreation={props.onNewMessageCreation}/>
     <MessageList masterMessageList={props.masterMessageList} />
     <br/><br/>
     <hr/>

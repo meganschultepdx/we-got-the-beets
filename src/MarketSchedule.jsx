@@ -13,6 +13,7 @@ function MarketSchedule(props) {
               hours={weekDay.hours}
               booth={weekDay.booth}
               masterMessageList={props.masterMessageList}
+              onNewMessageCreation={props.onNewMessageCreation}
               key={index}/>
           )}
         </div>

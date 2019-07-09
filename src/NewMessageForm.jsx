@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+import NewMessageControl from './NewMessageControl';
 
 function NewMessageForm(props){
 console.log("hi", props);
@@ -28,7 +29,7 @@ console.log("hi", props);
     placeholder='Describe your message.'
     ref={(textarea) => {_message = textarea;}}/>
     <br/><br/><br/>
-    <button type='submit'>Help!</button>
+    <button type='submit'>Leave Message!</button>
     </form>
     </div>
   );

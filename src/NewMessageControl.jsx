@@ -3,7 +3,6 @@ import NewMessageForm from './NewMessageForm';
 import PropTypes from "prop-types";
 
 class NewMessageControl extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
