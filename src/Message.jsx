@@ -6,7 +6,7 @@ function Message(props){
 
   return (
     <div>
-      <h3>{props.names}</h3>
+      <h3>{props.names} - {props.messages}</h3>
       <hr/>
     </div>
   );

@@ -6,13 +6,13 @@ import NewMessageControl from './NewMessageControl';
 function NewMessageForm(props){
 console.log("hi", props);
   let _names = null;
-  let _message = null;
+  let _messages = null;
 
   function handleNewMessageFormSubmission(event) {
     event.preventDefault();
-    props.onNewMessageCreation({names: _names.value,  message: _message.value, id: v4()});
+    props.onNewMessageCreation({names: _names.value,  messages: _messages.value, id: v4()});
    _names.value = '';
-   _message.value = '';
+   _messages.value = '';
   }
 
   return (
@@ -25,9 +25,9 @@ console.log("hi", props);
     ref={(input) => {_names = input;}}/>
     <br/><br/><br/>
     <textarea
-    id='message'
+    id='messages'
     placeholder='Describe your message.'
-    ref={(textarea) => {_message = textarea;}}/>
+    ref={(textarea) => {_messages = textarea;}}/>
     <br/><br/><br/>
     <button type='submit'>Leave Message!</button>
     </form>
